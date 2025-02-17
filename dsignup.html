@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form id="signup-form" action="connect.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="fullName" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="dateofbirth">Date of Birth:</label>
+            <input type="date" id="dateofbirth" name="dateofbirth" required>
+
+            <label for="role">Role:</label>
+            <select id="role" name="role" required>
+                <option value="">Select a role</option>
+                <option value="driver">Driver</option>
+                <option value="management">Management</option>
+                <option value="admin">Admin</option>
+            </select>
+            
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="dsignin.html">Sign In</a></p>
+    </div>
+</body>
+</html>
